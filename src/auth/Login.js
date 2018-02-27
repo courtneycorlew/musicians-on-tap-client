@@ -34,7 +34,7 @@ class Login extends Component {
         ).then((data) => {
             this.props.setToken(data.sessionToken)
             if(data.sessionToken){
-            window.location.href = '/dashboard'
+            window.location.href = 'musiciansontap/dashboard'
             } else {
                 alert('This user does not exist.')
             }

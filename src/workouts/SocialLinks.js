@@ -53,7 +53,7 @@ class SocialLinks extends React.Component {
                 this.changePage()
             })
     }
-    changePage = () => this.nextPath('/videos')
+    changePage = () => this.nextPath('musiciansontap/videos')
     render() {
         return (
             <div className="main">

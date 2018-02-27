@@ -49,7 +49,7 @@ class Videos extends React.Component {
                 this.changePage()
             })
     }
-    changePage = () => this.nextPath('/dashboard')
+    changePage = () => this.nextPath('musiciansontap/dashboard')
     render() {
         return (
             <div className="main">
