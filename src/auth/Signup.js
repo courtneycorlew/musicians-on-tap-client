@@ -36,7 +36,7 @@ class Signup extends Component {
 
     handleSubmit(event) {
        
-        fetch("http://localhost:3001/api/signup", {
+        fetch("https://musicians-on-tap-server.herokuapp.com/api/signup", {
             method: 'POST',
             body: JSON.stringify({user:this.state}),
             headers: new Headers({

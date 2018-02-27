@@ -23,7 +23,7 @@ class Login extends Component {
     }
 
     handleSubmit(event) {
-        fetch("http://localhost:3001/api/login", {
+        fetch("https://musicians-on-tap-server.herokuapp.com/api/login", {
             method: 'POST',
             body: JSON.stringify({user:this.state}),
             headers: new Headers({

@@ -35,7 +35,7 @@ class ArtistSetup extends React.Component {
 
     handleSubmit(event) {
         event.preventDefault()
-        fetch("http://localhost:3001/api/artist/", {
+        fetch("https://musicians-on-tap-server.herokuapp.com/api/artist/", {
             method: 'POST',
             body: JSON.stringify({ artist: this.state }),
             headers: new Headers({

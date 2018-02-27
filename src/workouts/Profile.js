@@ -45,7 +45,7 @@ export default class Profile extends React.Component {
   
     fetchUser = () => {
         
-        fetch(`http://localhost:3001/api/signup/${this.state.userId}`, {
+        fetch(`https://musicians-on-tap-server.herokuapp.com/api/signup/${this.state.userId}`, {
             method: 'GET',
             headers: new Headers({
                 'Content-Type': 'application/json',
@@ -62,7 +62,7 @@ export default class Profile extends React.Component {
     }
 
     fetchSocial = () => {
-        fetch(`http://localhost:3001/api/socialLinks/${this.state.userId}`, {
+        fetch(`https://musicians-on-tap-server.herokuapp.com/api/socialLinks/${this.state.userId}`, {
             method: 'GET',
             headers: new Headers({
                 'Content-Type': 'application/json',
@@ -89,7 +89,7 @@ export default class Profile extends React.Component {
         .catch(err => err)
     }
     fetchAbout = () => {
-        fetch(`http://localhost:3001/api/artist/${this.state.userId}`, {
+        fetch(`https://musicians-on-tap-server.herokuapp.com/api/artist/${this.state.userId}`, {
             method: 'GET',
             headers: new Headers({
                 'Content-Type': 'application/json',
@@ -109,7 +109,7 @@ export default class Profile extends React.Component {
     }
 
     fetchVideos = () => {
-        fetch(`http://localhost:3001/api/videos/${this.state.userId}`, {
+        fetch(`https://musicians-on-tap-server.herokuapp.com/api/videos/${this.state.userId}`, {
             method: 'GET',
             headers: new Headers({
                 'Content-Type': 'application/json',

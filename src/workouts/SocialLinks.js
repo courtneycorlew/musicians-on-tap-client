@@ -38,7 +38,7 @@ class SocialLinks extends React.Component {
     handleSubmit(event) {
         event.preventDefault();
 
-        fetch("http://localhost:3001/api/socialLinks", {
+        fetch("https://musicians-on-tap-server.herokuapp.com/api/socialLinks", {
             method: 'POST',
             body: JSON.stringify({ social: this.state }),
             headers: new Headers({

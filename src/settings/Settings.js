@@ -103,7 +103,7 @@ export default class Settings extends React.Component {
 
 // FETCHING DATA
     fetchUsers = () => {
-        fetch(`http://localhost:3001/api/signup/${this.state.userId}`, {
+        fetch(`https://musicians-on-tap-server.herokuapp.com/api/signup/${this.state.userId}`, {
             method: 'GET',
             headers: new Headers({
                 'Content-Type': 'application/json',
@@ -123,7 +123,7 @@ export default class Settings extends React.Component {
         })
     }
     fetchSocial = () => {
-        fetch(`http://localhost:3001/api/socialLinks/${this.state.userId}`, {
+        fetch(`https://musicians-on-tap-server.herokuapp.com/api/socialLinks/${this.state.userId}`, {
             method: 'GET',
             headers: new Headers({
                 'Content-Type': 'application/json',
@@ -150,7 +150,7 @@ export default class Settings extends React.Component {
         })
     }
     fetchAbout = () => {
-        fetch(`http://localhost:3001/api/artist/${this.state.userId}`, {
+        fetch(`https://musicians-on-tap-server.herokuapp.com/api/artist/${this.state.userId}`, {
             method: 'GET',
             headers: new Headers({
                 'Content-Type': 'application/json',
@@ -171,7 +171,7 @@ export default class Settings extends React.Component {
         })
     }
     fetchVideos = () => {
-        fetch(`http://localhost:3001/api/videos/${this.state.userId}`, {
+        fetch(`https://musicians-on-tap-server.herokuapp.com/api/videos/${this.state.userId}`, {
             method: 'GET',
             headers: new Headers({
                 'Content-Type': 'application/json',
@@ -211,7 +211,7 @@ export default class Settings extends React.Component {
 // HANDLING UPDATE SUBMIT BUTTON
     handleSubmit = (event) => {
         event.preventDefault();
-        fetch('http://localhost:3001/api/artist/', {
+        fetch('https://musicians-on-tap-server.herokuapp.com/api/artist/', {
             method: 'PUT',
             body: JSON.stringify({ 
                 artist: { 
@@ -231,7 +231,7 @@ export default class Settings extends React.Component {
     }
     handleSubmitSocial = (event) => {
         event.preventDefault();
-        fetch('http://localhost:3001/api/socialLinks/', {
+        fetch('https://musicians-on-tap-server.herokuapp.com/api/socialLinks/', {
             method: 'PUT',
             body: JSON.stringify({ 
                 social: {
@@ -257,7 +257,7 @@ export default class Settings extends React.Component {
     }
     handleSubmitUser = (event) => {
         event.preventDefault();
-        fetch(`http://localhost:3001/api/signup/`, {
+        fetch(`https://musicians-on-tap-server.herokuapp.com/api/signup/`, {
             method: 'PUT',
             body: JSON.stringify({ 
                 user: {
@@ -276,7 +276,7 @@ export default class Settings extends React.Component {
     }
     handleSubmitVideo = (event) => {
         event.preventDefault();
-        fetch(`http://localhost:3001/api/videos/`, {
+        fetch(`https://musicians-on-tap-server.herokuapp.com/api/videos/`, {
             method: 'PUT',
             body: JSON.stringify({ 
                 videos: {
@@ -300,7 +300,7 @@ export default class Settings extends React.Component {
 
 // DELETING PROFILE
     deleteUser = () => {
-        fetch(`http://localhost:3001/api/signup/${this.state.userId}`, {
+        fetch(`https://musicians-on-tap-server.herokuapp.com/api/signup/${this.state.userId}`, {
             method: 'DELETE',
             body: JSON.stringify({
                 id: this.state.userId
@@ -313,7 +313,7 @@ export default class Settings extends React.Component {
         .catch(err => err)
     }
     deleteArtist= () => {
-        fetch(`http://localhost:3001/api/artist/${this.state.userId}`, {
+        fetch(`https://musicians-on-tap-server.herokuapp.com/api/artist/${this.state.userId}`, {
             method: 'DELETE',
             body: JSON.stringify({
                 owner: this.state.userId,
@@ -327,7 +327,7 @@ export default class Settings extends React.Component {
     }
 
     deleteSocial= () => {
-        fetch(`http://localhost:3001/api/socialLinks/${this.state.userId}`,{
+        fetch(`https://musicians-on-tap-server.herokuapp.com/api/socialLinks/${this.state.userId}`,{
             method: 'DELETE',
             body: JSON.stringify({
                 owner: this.state.userId
@@ -341,7 +341,7 @@ export default class Settings extends React.Component {
     }
 
     deleteVideos = () => {
-        fetch(`http://localhost:3001/api/videos/${this.state.userId}`, {
+        fetch(`https://musicians-on-tap-server.herokuapp.com/api/videos/${this.state.userId}`, {
             method: 'DELETE',
             body: JSON.stringify({
                 owner: this.state.userId

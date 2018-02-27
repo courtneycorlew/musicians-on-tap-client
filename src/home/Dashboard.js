@@ -37,7 +37,7 @@ export default class Dashboard extends Component {
 
     fetchArtists = () => {
         
-        fetch("http://localhost:3001/api/artist", {
+        fetch("https://musicians-on-tap-server.herokuapp.com/api/artist", {
             method: 'GET',
             headers: new Headers({
                 'Content-Type': 'application/json',
@@ -53,7 +53,7 @@ export default class Dashboard extends Component {
     }
 
     fetchUsers = () => {
-        fetch("http://localhost:3001/api/signup", {
+        fetch("https://musicians-on-tap-server.herokuapp.com/api/signup", {
             method: 'GET',
             headers: new Headers({
                 'Content-Type': 'application/json',

@@ -34,7 +34,7 @@ class Videos extends React.Component {
     handleSubmit(event) {
         event.preventDefault();
 
-        fetch("http://localhost:3001/api/videos", {
+        fetch("https://musicians-on-tap-server.herokuapp.com/api/videos", {
             method: 'POST',
             body: JSON.stringify({ videos: this.state }),
             headers: new Headers({
