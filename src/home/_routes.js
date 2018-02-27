@@ -9,32 +9,32 @@ import Videos from '../workouts/Videos'
 
 export const routes = [
     {
-      path: 'musiciansontap/dashboard',
+      path: '/dashboard',
       exact: true,
       main: () => <Dashboard />
     },
     {
-        path: 'musiciansontap/login',
+        path: '/login',
         exact: true,
         main: () => <Auth />
     },
     {
-        path: 'musiciansontap/artistsetup',
+        path: '/artistsetup',
         exact: true,
         main: () => <ArtistSetup/>
     },
     {
-        path: 'musiciansontap/socialsettings',
+        path: '/socialsettings',
         exact: true,
         main: () => <SocialLinks/>
     },
     {
-        path: 'musiciansontap/settings',
+        path: '/settings',
         exact: true,
         main: () => <Settings />
     },
     {
-        path: 'musiciansontap/videos',
+        path: '/videos',
         exact: true,
         main: () => <Videos />
     }

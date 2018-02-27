@@ -48,7 +48,7 @@ class Signup extends Component {
         ).then((data) => {
             this.props.setToken(data.sessionToken)
             console.log(data)
-            window.location.href = 'musiciansontap/artistsetup'
+            window.location.href = '/artistsetup'
             window.localStorage.setItem("currentUser", data.user.id)
             
             

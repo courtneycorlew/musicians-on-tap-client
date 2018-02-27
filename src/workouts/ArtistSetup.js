@@ -53,7 +53,7 @@ class ArtistSetup extends React.Component {
                 
             })
     }
-    socialsettings = () => this.nextPath('musiciansontap/socialsettings')
+    socialsettings = () => this.nextPath('/socialsettings')
 
 
   
